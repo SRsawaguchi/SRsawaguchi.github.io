@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- 
+  制作秘話。。。
+  ルール説明、cssは殴り書きで３０分で作成orz
+-->
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice of Doom</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <header>
+        <h1>Dice of Doom</h1>
+    </header>
+
+    <div id="desc">
+      <h2>遊び方</h2>
+      <p>コンピュータとダイスを奪い合うゲームです。</p>
+      <p>あなたのダイスの色は緑で、青いダイスのマスを攻撃できます。</p><footer>
+</footer>
+      <ol>
+        <li>
+          <p>攻撃元マス→攻撃するマスを順番にクリックします。</p>
+          <p>注)攻撃元マスのダイス数が、攻撃先マスのダイス数よりも多くないと攻撃できません。</p>
+          <p>注)攻撃元マスに隣接している相手のマスのみ攻撃できます。</p>
+        </li>
+        <li>
+          <p>左上の<span class="rc"></span>をクリックすると相手にターンを渡します。</p>
+          <p>まだ攻撃したいマスがある場合は、ターンを渡さずに攻撃することもできます。</p>
+          <p>注)最低１回攻撃しないと、ターンを終了できません。</p>
+        </li>
+        <li>
+          <p>相手にターンを渡すと、[獲得したダイス数-1]個を左上のマスから順番に補給します。 </p>
+        </li>
+        <li>
+          <p>これらを繰り返して、どちらかが攻撃攻撃できなくなったらゲーム終了。</p>
+          <p>その時点で、ゲーム盤のダイス数が多いプレイヤーが勝利です。</p>
+        </li>
+          <p>このゲームはLand of Lispという書籍で紹介されていたゲームです。</p>
+          <p>書籍ではCommon Lispで記述されていたゲームをJavaScriptで実現しました。</p>
+      </ol>
+    </div>
+
+    <p id="gameMsg"></p>
+    <div id="gameWindow">
+       <div class="gameInfo" id="gameInfo0">
+           <p class="playerName">あなた</p>
+           <p class="spareDice">獲得ダイス :0</p>
+           <p class="attackCount">攻撃回数   :0</p>
+       </div> <!-- #gameInfo0 -->
+       
+       <div id="game">
+           <svg width="900" height="500"></svg>
+       </div> <!-- #game -->
+       
+       <div class="gameInfo" id="gameInfo1">
+           <p class="playerName">COMPUTER</p>
+           <p class="spareDice">獲得ダイス :0</p>
+           <p class="attackCount">攻撃回数   :0</p>
+       </div> <!-- #gameInfo1 -->
+   </div> <!-- #gameWindow -->
+
+   <footer>
+     <p>&copy;2015 Naoya Sawaguchi All Rights reserved.</p>
+   </footer>
+
+   <script src="srsvg.js"></script>
+   <script src="dod.js"></script>
+</body>
+</html>

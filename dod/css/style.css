@@ -1,0 +1,70 @@
+header{
+  text-align:center;
+}
+
+svg{
+  display:block;
+  margin:0 auto;
+  border:1px solid #000;
+}
+#owabi {
+  text-align:center;
+}
+
+#desc {
+  border:1px solid #ccc;
+  width:700px;
+  margin:30px auto;
+}
+#desc h2 {
+  text-align:center;
+}
+
+#gameMsg {
+  display:block;
+  margin:30px auto;
+  font-size:30px;
+  width:500px;
+  border-radius:5px;
+  border:1px solid #ccc;
+  text-align:center;
+}
+
+.rc {
+  display:inline-block;
+  width:10px;
+  height:10px;
+  border-radius:100%;
+  background-color:#f00;
+}
+
+#gameWindow {
+  display:flex;
+  justify-content:space-between;
+}
+
+.gameInfo {
+}
+
+.playerName ,.spareDice,.attackCount{
+  width:150px;
+  border:1px solid #ccc;
+  border-radius:5px;
+  padding:5px;
+}
+
+.playerName {
+  color:#fafafa;
+  font-weight:800;
+}
+#gameInfo0 .playerName {
+  background-color:#0f0;
+}
+
+#gameInfo1 .playerName {
+  background-color:#00f;
+}
+
+footer {
+  text-align:center;
+}

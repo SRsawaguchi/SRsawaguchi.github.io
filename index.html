@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/jquery.ba-throttle-debounce.min.js"></script>
+  <script src="js/cmn.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Lambda</title>
+</head>
+<body>
+  <header>
+    <div id="header-contents">
+      <div class="site-logo">
+        <a href="#">Lambda</a>
+      </div> <!-- .site-logo -->
+      <nav id="tnav">
+        <ul>
+          <li><a href="#profile">profile</a></li>
+          <li><a href="#qualifications">qualifications</a></li>
+          <li><a href="#works">works</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div> <!-- #header-contents -->
+  </header>
+
+  <div id="contents">
+    <section id="top">
+      <div class="wrap">
+        <div class="text-box">
+          <p>初心に再帰する</p>
+        </div> <!-- .text-box -->
+      </div> <!-- .wrap -->
+    </section>
+    <p id="news">
+      <span>2017.6.27</span>
+      <span>profileを更新</span>
+    </p>
+
+    <section id="profile">
+      <div class="wrap">
+        <h2>profile</h2>
+        <div class="s_body">
+          <h3>沢口 直哉</h3>
+          <img src="images/prof.png" alt="" />
+          <div class="text-box sc">
+            <p>新米プログラマ</p>
+          </div> <!-- .text-box .sc -->
+          <div class="text-box pr">
+            <p>Webが好きです。Webアプリ作ってます。</p>
+            <p>とはいえ、WindowsアプリやVBA、組込みなど<br />
+              割と好き嫌いなくいろいろやってます。</p>
+            <p>このサイトは就活時に自己PRのため制作したものです。</p>
+            <p>とりあえず、保守しています。。。</p>
+          </div> <!-- .text-box .pr -->
+        </div> <!-- .s_body -->
+      </div> <!-- .wrap -->
+    </section> <!-- #profile -->
+
+    <section id="qualifications">
+      <div class="wrap">
+        <h2>qualifications</h2>
+        <div class="s_body">
+          <dl>
+            <dt>基本情報技術者試験</dt>
+            <dd><time>2012-11-19</time>独学で合格。広い知識を勉強したくて受験。</dd>
+            <dt>応用情報技術者試験</dt>
+            <dd><time>2013-6-21</time>独学で合格。高みを目指したくて受験。</dd>
+            <dt>情報セキュリティスペシャリスト</dt>
+            <dd><time>2015-6-19</time>情報セキュリティへの注目が高まったため受験。</dd>
+            <dt>ネットワークスペシャリスト</dt>
+            <dd><time>2015-12-18</time>1度の不合格を経験し、2回目で合格。午後Ⅰ92点</dd>
+          </dl>
+          <div class="dropdown-container">
+            <a class="dd-toggle button" href="">その他の資格を表示</a>
+            <ul class="dd-contents">
+              <li>
+                <time>2010-3</time>
+                <span>普通自動車免許(AT限定)</span>
+              </li>
+              <li>
+                <time>2010-9-11</time>
+                <span>Microsoft&reg; Office Specialist Office PowerPoint&reg; 2007</span>
+              </li>
+              <li>
+                <time>2010-9-25</time>
+                <span>Microsoft&reg; Office Specialist Office Word&reg; 2007</span>
+              </li>
+              <li>
+                <time>2012-2-25</time>
+                <span>Microsoft&reg; Office Specialist Office Excel&reg; 2007</span>
+              </li>
+              <li>
+                <time>2014-9-26</time>
+                <span>サーティファイ 情報処理技術者能力認定試験 3級</span>
+              </li>
+              <li>
+                <time>2015-3</time>
+                <span>文部科学省講演 情報処理検定 基本スキル</span>
+              </li>
+              <li>
+                <time>2015-3</time>
+                <span>文部科学省講演 情報処理検定 システムデザインスキル</span>
+              </li>
+              <li>
+                <time>2015-3</time>
+                <span>文部科学省講演 情報処理検定 システムエンジニア認定</span>
+              </li>
+              <li>
+                <time>2015-3-11</time>
+                <span>サーティファイ Excel&reg;表計算処理技能認定試験 2級</span>
+              </li>
+            </ul>
+          </div> <!-- .doropdown-container -->
+        </div> <!-- .s_body -->
+      </div> <!-- .wrap -->
+    </section> <!-- #qualifications -->
+
+    <section id="works">
+      <div class="wrap">
+        <h2>works</h2>
+        <div class="s_body">
+          <ul class="works_list">
+            <li>
+              <h3>foodkoko website</h3>
+              <div class="imgframe">
+                <img src="images/foodkoko.jpg" alt="" />
+              </div> <!-- .imgframe -->
+              <a class="button" href="http://he.core-akita.ac.jp/foodkoko/">サイトにアクセス</a>
+              <dl>
+                <dt>説明</dt>
+                <dd>授業で制作したAndroidアプリ、foodkokoを紹介するWebサイト</dd>
+                <dt>制作期間</dt>
+                <dd>2016年1月下旬 2週間</dd>
+                <dt>使用技術</dt>
+                <dd>
+                <ul>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript(jQuery)</li>
+                  <li>Vim</li>
+                  <li>node.js</li>
+                  <li>Sass</li>
+                  <li>Autoprefixer</li>
+                </ul>
+                </dd>
+                <dt>工夫した点</dt>
+                <dd>
+                <div class="text-box">
+                  <p>伝えたい情報は何か、を考え情報量をおさえる。</p>
+                  <p>情報量が減ってもスカスカに見えないよう、余白とフォントサイズを調整。</p>
+                  <p>また、見ていて違和感を覚えないよう、整列すべきコンポーネントは画像サイズから余白まできちんと揃えた。</p>
+                  <p>レスポンシブWebデザインでスマートフォンにも対応。</p>
+                </div> <!-- .text-box -->
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h3>ストップウォッチ</h3>
+              <div class="ytframe">
+                <iframe src="https://www.youtube.com/embed/TMPOUsOSR38" frameborder="0" allowfullscreen></iframe>
+              </div> <!-- .ytframe -->
+              <a class="button" href="https://github.com/SRsawaguchi/StopWatch">GitHub</a>
+              <dl>
+                <dt>制作期間</dt>
+                <dd>2016年1月～2月(約1か月)</dd>
+                <dt>開発環境</dt>
+                <dd>Code Composer Studio(Eclipse)</dd>
+                <dt>ターゲット</dt>
+                <dd>ADWIN(株) ARMチャレンジャーキット</dd>
+                <dt>仕様</dt>
+                <dd>ストップウォッチのStart/Stopモード、Lap/Splitモードに対応。</dd>
+                <dt>工夫した点</dt>
+                <dd>
+                <div class="text-box">
+                  <p>ハードウェアに依存する部分とそうでない部分を分けた。</p>
+                  <p>ストップウォッチの機能はwatch.cにまとめ、Arduinoなど、C言語が使える環境すべてで動作するように工夫。</p>
+                  <p>ストップウォッチの状態遷移を関数ポインタのテーブルで実装した。</p>
+                </div> <!-- .text-box -->
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h3>POP作成マクロ</h3>
+              <div class="imgframe">
+                <img src="images/pop.png" alt="">
+              </div> <!-- .imgframe -->
+              <a class="button" href="https://github.com/SRsawaguchi/POPmaker">GitHub</a>
+              <dl>
+                <dt>説明</dt>
+                <dd>POP作成を支援するExcelマクロ</dd>
+                <dt>制作期間</dt>
+                <dd>2015年12月(2週間)～現在は機能追加を行っている</dd>
+                <dt>開発経緯</dt>
+                <dd>アルバイト先のスーパーマーケットにて、POP作成業務の効率が悪かった点を改善するため。</dd>
+                <dt>工夫した点</dt>
+                <dd>
+                <div class="text-box">
+                  <p>何度も同じデータを入力しなくてよい機能を実装。</p>
+                  <p>上の行と同じデータを省略可能。(自動的に上の行のデータが引き継がれる。)</p>
+                  <p>入力ミスを防ぐため、Excelシートに入力規則を設定。</p>
+                  <p>作業ミス防止のため、消されては困るシートなどを非表示に設定。</p>
+                </div> <!-- .text-box -->
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <h3>コトゲキ</h3>
+              <div class="ytframe">
+                <iframe src="https://www.youtube.com/embed/TKKEQXE97y0" frameborder="0" allowfullscreen></iframe>
+              </div> <!-- .ytframe -->
+              <a class="button" href="https://github.com/SRsawaguchi/kotogeki">GitHub</a>
+              <dl>
+                <dt>説明</dt>
+                <dd>Windowsで動作するタイピングゲーム。間違ったキーの情報を確認できる。</dd>
+                <dt>制作期間</dt>
+                <dd>2014年6月～9月(3か月)</dd>
+                <dt>開発経緯</dt>
+                <dd>
+                <div class="text-box">
+                  <p>学校際で展示するゲームを制作するのでプログラムを担当。</p>
+                  <p>最初はシューティングゲームを作成するつもりで、プログラミングを進めていたものの、あとからタイピングゲームに変更したい、という要望があり、機能を追加。</p>
+                </div> <!-- .text-box -->
+                </dd>
+                <dt>工夫した点</dt>
+                <dd>
+                <div class="text-box">
+                  <p>ローマ字入力の処理では、ほとんどの入力パターンに対応。</p>
+                  <p>例:「くっちゃね」に対し「kucchane」「kuttyane」「kultutyane」など、なんでも認識可能。</p>
+                  <p>その他、ソフトウェアの設計、全体的なプログラミングを担当。（弾道計算のプログラミングはクラスメイトが担当)</p>
+                </div> <!-- .text-box -->
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div> <!-- .s_body -->
+      </div> <!-- .wrap -->
+    </section> <!-- #works -->
+
+    <section id="contact">
+      <div class="wrap">
+        <h2>contact</h2>
+        <div class="s_body">
+          <div class="text-box">
+            <p>何かありましたら、お気軽にどうぞ。</p>
+          </div>
+          <a class="button" href="http://goo.gl/forms/lK3YFcPKoO">問い合わせフォーム</a>
+          <p>Google フォームに移動します。</p>
+        </div> <!-- .s_body -->
+      </div> <!-- .wrap -->
+    </section> <!-- #contact -->
+  </div> <!-- #contents -->
+
+  <footer>
+    <p id="copy-right">&copy;2017 Naoya Sawaguchi<br /> All Rights reserved.</p>
+  </footer>
+</body>
+</html>
